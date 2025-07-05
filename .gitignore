@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Vite build output
+dist/
+
+# Vite cache
+.vite/
+
+# dotenv files
+.env
+.env.*.local
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# ESLint / Prettier / test
+.eslintcache
+coverage/
+*.snap
+
+# Optional
+*.local
+
+# macOS Finder settings
+.AppleDouble
+.LSOverride
