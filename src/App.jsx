@@ -9,7 +9,7 @@ import Signup from './Pages/Signup';
 import SmartKitchen from './Pages/Smartkitchen';
 import SavedRecipe from './Pages/SavedRecipe';
 import RecipePage from './Pages/RecipePage';
-import MealPlanPage from './pages/MealPlanPage';
+import MealPlanPage from './Pages/MealPlanPage';
 
 import './index.css';
 
