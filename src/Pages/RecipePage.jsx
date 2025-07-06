@@ -15,7 +15,7 @@ const RecipePage = () => {
       const res = await api.get(`/api/generated/static-full/${id}`);
       setRecipe(res.data.data);
     } catch (err) {
-      console.error('❌ Error fetching full recipe:', err);
+      console.error(' Error fetching full recipe:', err);
     } finally {
       setLoading(false);
     }
@@ -48,13 +48,16 @@ const RecipePage = () => {
 
       <h1 className="text-3xl font-bold text-rose-700 mb-5 mt-5 text-center">{recipe.title}</h1>
 
-      <div className="flex justify-center items-center w-full max-h-[300px] bg-white mb-4">
-        <img
-  src={`${imageBaseUrl}${recipe.imageUrl}`}
-  alt={recipe.title}
-/>
+      <div className="flex justify-center items-center bg-white mb-6">
+  <img
+    src={`${imageBaseUrl}${recipe.imageUrl}`}
+    alt={recipe.title}
+    className="w-[300px] h-[220px] object-cover rounded-lg shadow"
+  />
+</div>
 
-      </div>
+
+      
 
       <p className="text-gray-700 mb-4">{recipe.description}</p>
 
@@ -99,6 +102,9 @@ const RecipePage = () => {
 };
 
 export default RecipePage;
+
+
+
 
 
 
