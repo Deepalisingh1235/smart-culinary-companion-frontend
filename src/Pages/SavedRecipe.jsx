@@ -101,7 +101,7 @@ const SavedRecipes = () => {
   useEffect(() => {
     if (!token) {
       setError('🔐 Please login first.');
-      setTimeout(() => (window.location.href = '/login'), 1500);
+      
       return;
     }
     fetchSavedRecipes();
